@@ -4,6 +4,11 @@ randomise();
 var allowUser = true;
 var body = document.getElementsByTagName('body')[0];
 body.style.backgroundImage = 'http://adventurecaravans.com/wp-content/uploads/2013/08/Skarstad-Norway-Cold-Mountain-Lake-at-Dusk-credit-NONE.jpg';
+var cardDivs = document.getElementsByClassName('card-div');
+var clicks = 0; //number of clicks, resets after two
+var clickedCards = []; //clicked cards, empties after every two
+var wrong = 0; //counter for wrong tries
+var correctClicks = []; //when pairs are correct they are added
 
 
 //function for randomisation
@@ -18,8 +23,6 @@ function randomise () {
 }
 
 //links randomisation to cardDivs
-var cardDivs = document.getElementsByClassName('card-div');
-
 
 for (i=0; i<cardDivs.length; i++) {
 	cardDivs[i].setAttribute('data-set', cards[i]);
@@ -29,10 +32,7 @@ for (i=0; i<cardDivs.length; i++) {
 
 
 //function for showing photos on click
-var clicks = 0;
-var clickedCards = [];
-var wrong = 0;
-var correctClicks = [];
+
 
 function showPhotos (event) {
 	if (allowUser) {
@@ -91,6 +91,7 @@ function changeBack () {
 	clicks = 0;
 	allowUser = true;
 }
+
 
 // function for if player wins
 function won () {
