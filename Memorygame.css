@@ -1,0 +1,42 @@
+body{
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: rgba(0,0,0,0.7);
+    text-align: center;
+    background-image: url(http://adventurecaravans.com/wp-content/uploads/2013/08/Skarstad-Norway-Cold-Mountain-Lake-at-Dusk-credit-NONE.jpg);
+
+}
+
+.container{
+	margin-bottom: 20px;
+	margin-top: 20px;
+	background-color: rgba(115,47,239,0.6);
+	border-radius: 20px;
+	padding: 30px;
+}
+
+.row.head{
+	padding-bottom: 35px;
+}
+
+
+.row.main{
+}
+
+.card-div{
+	height: 180px;
+	padding: 20px;
+	background-image: url('./question-mark.png');
+	background-repeat: no-repeat;
+	background-size: 60%;
+	background-position: center;
+}
+
+#heading{
+	font-family: 'Lobster', cursive;
+	font-size: 400%;
+	color: #c4c3c2;
+	text-shadow: 2px 2px #7c7a77;
+}
